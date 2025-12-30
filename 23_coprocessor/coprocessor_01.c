@@ -147,4 +147,5 @@ int count_muls(const char *filename) {
 int main(void) {
   int answer = count_muls("input.txt");
   printf("calculated answer is %d\n", answer);
+  return 0;
 }
