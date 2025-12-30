@@ -1,0 +1,7 @@
+Dockerfile
+bin/
+.DS_Store
+*.txt
+*.swp
+*.swo
+*.swx
