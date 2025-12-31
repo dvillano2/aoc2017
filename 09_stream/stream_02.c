@@ -34,11 +34,12 @@ int process_string(const char *to_process) {
 
 int main(void) {
   char big_string[BUF_SIZE];
-  FILE *fp = fopen("big_string.txt", "r");
+  FILE *fp = fopen("input.txt", "r");
   size_t bytes_read = fread(big_string, 1, BUF_SIZE - 1, fp);
   big_string[bytes_read] = '\0';
   fclose(fp);
 
   int answer = process_string(big_string);
-  printf("Calculated score is %d, correct score is ????\n", answer);
+  printf("answer is %d\n", answer);
+  return 0;
 }
