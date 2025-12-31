@@ -17,14 +17,6 @@ int total_steps(int num) {
 }
 
 int main(void) {
-  int answer = total_steps(1);
-  printf("caculated is %d, correct answer is 0\n", answer);
-  answer = total_steps(12);
-  printf("caculated is %d, correct answer is 3\n", answer);
-  answer = total_steps(23);
-  printf("caculated is %d, correct answer is 2\n", answer);
-  answer = total_steps(1024);
-  printf("caculated is %d, correct answer is 31\n", answer);
-  answer = total_steps(325489);
-  printf("caculated is %d, correct answer is ?????\n", answer);
+  int answer = total_steps(325489);
+  printf("answer is %d\n", answer);
 }

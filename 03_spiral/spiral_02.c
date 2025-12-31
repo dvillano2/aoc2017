@@ -71,10 +71,6 @@ int build_spiral(int threshold) {
 }
 
 int main(void) {
-  int answer = build_spiral(5);
-  printf("Calculated answer is %d, true answer is 10\n", answer);
-  answer = build_spiral(136);
-  printf("Calculated answer is %d, true answer is 142\n", answer);
-  answer = build_spiral(325489);
-  printf("Calculated answer is %d, true answer is ????\n", answer);
+  int answer = build_spiral(325489);
+  printf("answer is %d\n", answer);
 }

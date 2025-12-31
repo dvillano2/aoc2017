@@ -66,6 +66,6 @@ int main(void) {
     redistribute(blocks, LEN);
   }
   free_tree(head);
-  printf("\n\nanswer is %d\n\n", count);
+  printf("answer is %d\n", count);
   return 0;
 }
