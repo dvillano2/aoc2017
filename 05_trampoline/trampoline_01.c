@@ -88,8 +88,7 @@ int solve_trampoline(const char *filename) {
 }
 
 int main(void) {
-  int answer = solve_trampoline("trampoline1.txt");
-  printf("Computed %d, true answer is 10\n", answer);
-  answer = solve_trampoline("trampoline2.txt");
-  printf("Computed %d, true answer is ?????\n", answer);
+  int answer = solve_trampoline("input.txt");
+  printf("answer is %d\n", answer);
+  return 0;
 }
