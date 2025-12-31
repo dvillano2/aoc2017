@@ -31,6 +31,6 @@ int main(void) {
     index += i;
     index %= 256;
   }
-  printf("\ncaluclated answer is %d\n\n", thread[0] * thread[1]);
+  printf("answer is %d\n", thread[0] * thread[1]);
   return 0;
 }

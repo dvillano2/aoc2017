@@ -55,11 +55,11 @@ int main(void) {
     }
   }
 
-  printf("\ncaluclated answer is ");
+  printf("answer is ");
 
   for (int i = 0; i < 16; i++) {
     printf("%02x", dense[i]);
   }
-  printf("\n\n");
+  printf("\n");
   return 0;
 }
