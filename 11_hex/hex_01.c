@@ -33,7 +33,7 @@ int main(void) {
   FILE *fp = fopen("input.txt", "r");
   int steps[6] = {0};
   for (char line[30000]; fgets(line, 29999, fp);) {
-    const char *dir = strtok(line, ",");
+    const char *dir = strtok(line, ",\n");
     while (dir != NULL) {
       if (strcmp(dir, "n") == 0) {
         steps[0]++;
@@ -50,11 +50,11 @@ int main(void) {
       } else {
         printf("\n\nWEIRD TOKEN: %s\n\n", dir);
       }
-      dir = strtok(NULL, ",");
+      dir = strtok(NULL, ",\n");
     }
   }
   fclose(fp);
   int answer = simplify(steps);
-  printf("\n\nCalculated answer is %d\n\n\n", answer);
+  printf("answer is %d\n", answer);
   return 0;
 }

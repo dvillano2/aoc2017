@@ -36,7 +36,7 @@ int main(void) {
   int answer = 0;
 
   for (char line[30000]; fgets(line, 29999, fp);) {
-    const char *dir = strtok(line, ",");
+    const char *dir = strtok(line, ",\n");
     while (dir != NULL) {
       if (strcmp(dir, "n") == 0) {
         steps[0]++;
@@ -53,12 +53,12 @@ int main(void) {
       } else {
         printf("\n\nWEIRD TOKEN: %s\n\n", dir);
       }
-      dir = strtok(NULL, ",");
+      dir = strtok(NULL, ",\n");
       int distance = simplify(steps);
       answer = max(answer, distance);
     }
   }
   fclose(fp);
-  printf("\n\nCalculated answer is %d\n\n\n", answer);
+  printf("answer is %d\n", answer);
   return 0;
 }
