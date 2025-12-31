@@ -86,7 +86,6 @@ int main(void) {
     }
   }
 
-  printf("\n");
-  printf("\nCollected letters are %s\n\n", letters);
+  printf("answer is %s\n", letters);
   return 0;
 }

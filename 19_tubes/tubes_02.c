@@ -88,8 +88,6 @@ int main(void) {
     steps++;
   }
 
-  printf("\n");
-  printf("\nCollected letters are %s\n\n", letters);
-  printf("\nTook %d steps\n\n", steps);
+  printf("answer is %d\n", steps);
   return 0;
 }
