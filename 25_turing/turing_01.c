@@ -107,6 +107,6 @@ int main(void) {
   for (int i = 0; i < 12481997; i++) {
     checksum += move(&state, &position, tape);
   }
-  printf("%d\n", checksum);
+  printf("answer is %d\n", checksum);
   free(tape);
 }
