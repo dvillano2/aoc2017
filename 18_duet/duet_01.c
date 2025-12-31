@@ -29,6 +29,6 @@ int main(void) {
     last_played = b;
     i--;
   }
-  printf("%lld\n", last_played);
+  printf("answer is %lld\n", last_played);
   return 0;
 }
