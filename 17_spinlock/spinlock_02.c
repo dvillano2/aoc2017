@@ -15,6 +15,6 @@ int solve_spinlock(int step_size, int num_steps) {
 
 int main(void) {
   int answer = solve_spinlock(348, 50000000);
-  printf("Answer: %d\n", answer);
+  printf("answer is %d\n", answer);
   return 0;
 }
