@@ -108,9 +108,7 @@ int get_checksum(const char *filename) {
 }
 
 int main(void) {
-  int answer = get_checksum("checksum3.txt");
-  printf("calculated %d, the answer is 9\n", answer);
-  answer = get_checksum("checksum2.txt");
-  printf("calculated %d, the answer is ????\n", answer);
+  int answer = get_checksum("input.txt");
+  printf("answer is %d\n", answer);
   return 0;
 }

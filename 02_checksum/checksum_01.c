@@ -69,9 +69,7 @@ int get_checksum(const char *filename) {
   return checksum;
 }
 int main(void) {
-  int answer = get_checksum("checksum1.txt");
-  printf("calculated %d, the answer is 19\n", answer);
-  answer = get_checksum("checksum2.txt");
-  printf("calculated %d, the answer is ????\n", answer);
+  int answer = get_checksum("input.txt");
+  printf("answer is %d\n", answer);
   return 0;
 }
