@@ -75,7 +75,7 @@ char *perform_move(char *code, char dancers[], int positions[]) {
 
 //
 int main(void) {
-  FILE *fp = fopen("big_input.txt", "r");
+  FILE *fp = fopen("input.txt", "r");
   char buffer[BUF_SIZE];
   char *bp = buffer;
   size_t bytes_read = fread(buffer, 1, BUF_SIZE - 1, fp);
@@ -93,9 +93,11 @@ int main(void) {
   while (*bp != '\0') {
     bp = perform_move(bp, dancers, positions);
   }
+  printf("answer is ");
   for (int i = 0; i < 16; i++) {
     printf("%c", dancers[i]);
   }
 
   printf("\n");
+  return 0;
 }
