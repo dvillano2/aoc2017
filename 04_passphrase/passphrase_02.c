@@ -110,8 +110,7 @@ int score_file(const char *filename) {
 }
 
 int main(void) {
-  int answer = score_file("passphrase0.txt");
-  printf("Calculated answer is %d, correct answer is 2\n", answer);
-  answer = score_file("passphrase1.txt");
-  printf("Calculated answer is %d, correct answer is ????\n", answer);
+  int answer = score_file("input.txt");
+  printf("answer is %d\n", answer);
+  return 0;
 }

@@ -8,11 +8,8 @@ struct word_node {
 };
 
 FILE *open_file(const char *filename) {
-  printf("HEREHERHERE\n");
   FILE *fp = fopen(filename, "r");
-  printf("THERETHERE\n");
   if (!fp) {
-    fprintf(stderr, "Could not open file\n");
     exit(EXIT_FAILURE);
   }
   return fp;
@@ -41,7 +38,6 @@ FILE *examine_line(FILE *fp, int *score, struct word_node *base_node) {
 
         // compare to all other words and increment word count
         for (int i = 0; i < word_count; i++) {
-          printf("about to compare %s and %s \n", node->word, current_word);
           if (strcmp(node->word, current_word) == 0) {
             good_phrase = 0;
           }
@@ -53,18 +49,11 @@ FILE *examine_line(FILE *fp, int *score, struct word_node *base_node) {
         // make a new node if necessary
         if (node == NULL) {
           node = malloc(sizeof(struct word_node));
-          printf("mallocd for word %d\n", word_count - 1);
           node->next_word = NULL;
           node->word[0] = '\0';
           last_node->next_word = node;
         }
         strcpy(node->word, current_word);
-        // if (node->word != NULL) {
-        //   strcpy(node->word, current_word);
-        // } else {
-        //   node->word = strdup(current_word);
-        //   printf("mallocd for word %s\n", current_word);
-        // }
         node = base_node;
         last_node = NULL;
       }
@@ -86,7 +75,6 @@ FILE *examine_line(FILE *fp, int *score, struct word_node *base_node) {
 }
 
 int score_file(const char *filename) {
-  printf("COME ON\n");
   FILE *fp = open_file(filename);
   int score = 0;
   struct word_node base_node = {"\0", NULL};
@@ -104,8 +92,7 @@ int score_file(const char *filename) {
 }
 
 int main(void) {
-  int answer = score_file("passphrase0.txt");
-  printf("Calculated answer is %d, correct answer is 2\n", answer);
-  answer = score_file("passphrase1.txt");
-  printf("Calculated answer is %d, correct answer is ????\n", answer);
+  int answer = score_file("input.txt");
+  printf("answer is %d\n", answer);
+  return 0;
 }
