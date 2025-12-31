@@ -170,7 +170,7 @@ int main(void) {
     }
     walker = tmp;
   }
-  printf("\n\nanswer is %d\n\n", walker->weight + to_add);
+  printf("answer is %d\n", walker->weight + to_add);
 
   free_tree(head);
   return 0;

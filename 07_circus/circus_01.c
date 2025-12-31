@@ -107,12 +107,12 @@ int main(void) {
     hb--;
   }
   hb++;
-  printf("\nanswer is ");
+  printf("answer is ");
   while (*hb != '_') {
     printf("%c", *hb);
     hb++;
   }
-  printf("\n\n");
+  printf("\n");
   free_tree(head);
   return 0;
 }
