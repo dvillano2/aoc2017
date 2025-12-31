@@ -16,7 +16,6 @@ int get_length(FILE *fp) {
     c = getc(fp);
   }
   rewind(fp);
-  printf("length: %d\n", count);
   return count;
 }
 
@@ -58,17 +57,7 @@ int solve_capatcha(const char *filename) {
 }
 
 int main(void) {
-  int answer = solve_capatcha("cap_5.txt");
-  printf("Calculated %d, correct answer is 6\n", answer);
-  answer = solve_capatcha("cap_6.txt");
-  printf("Calculated %d, correct answer is 0\n", answer);
-  answer = solve_capatcha("cap_7.txt");
-  printf("Calculated %d, correct answer is 4\n", answer);
-  answer = solve_capatcha("cap_8.txt");
-  printf("Calculated %d, correct answer is 12\n", answer);
-  answer = solve_capatcha("cap_9.txt");
-  printf("Calculated %d, correct answer is 4\n", answer);
-  answer = solve_capatcha("cap_4.txt");
-  printf("Calculated %d, correct answer is ?????\n", answer);
+  int answer = solve_capatcha("input.txt");
+  printf("answer is %d\n", answer);
   return 0;
 }

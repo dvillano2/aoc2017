@@ -13,7 +13,7 @@ int get_next_int(FILE *fp) {
   if (c == '\n' || c == EOF) {
     return -1;
   }
-  return c - 48;
+  return c - '0';
 }
 
 int solve_capatcha(const char *filename) {
@@ -37,16 +37,8 @@ int solve_capatcha(const char *filename) {
   return sum;
 }
 
-
-int main(void){
-	int answer = solve_capatcha("cap_0.txt");
-	printf("Calculated %d, correct answer is 3\n", answer);
-	answer = solve_capatcha("cap_1.txt");
-	printf("Calculated %d, correct answer is 4\n", answer);
-	answer = solve_capatcha("cap_2.txt");
-	printf("Calculated %d, correct answer is 0\n", answer);
-	answer = solve_capatcha("cap_3.txt");
-	printf("Calculated %d, correct answer is 9\n", answer);
-	answer = solve_capatcha("cap_4.txt");
-	printf("Calculated %d, correct answer is ?????\n", answer);
+int main(void) {
+  int answer = solve_capatcha("input.txt");
+  printf("answer is %d\n", answer);
+  return 0;
 }
