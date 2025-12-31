@@ -59,7 +59,7 @@ const char *comparison_str[NUM_COMPARISONS] = {
 enum Comparison cmp_compare_str(const char *s) {
   for (int i = 0; i < NUM_COMPARISONS; i++) {
     if (strcmp(s, comparison_str[i]) == 0) {
-      return (enum Direction)i;
+      return (enum Comparison)i;
     }
   }
   return NUM_COMPARISONS;
@@ -203,8 +203,7 @@ int max_register(const char *filename) {
 }
 
 int main(void) {
-  int answer = max_register("small_input.txt");
-  printf("Calculated answer is %d, correct answer is 1\n", answer);
-  answer = max_register("input.txt");
-  printf("Calculated answer is %d, correct answer is ???\n", answer);
+  int answer = max_register("input.txt");
+  printf("answer is %d\n", answer);
+  return 0;
 }
