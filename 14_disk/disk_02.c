@@ -115,7 +115,6 @@ int main(void) {
       }
     }
   }
-  printf("\ncaluclated answer is %d", region_count);
-  printf("\n\n");
+  printf("answer is %d\n", region_count);
   return 0;
 }

@@ -77,7 +77,6 @@ int main(void) {
     make_input(i, base);
     total_ones += hash_zeros(base);
   }
-  printf("\ncaluclated answer is %d", total_ones);
-  printf("\n\n");
+  printf("answer is %d\n", total_ones);
   return 0;
 }
