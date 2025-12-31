@@ -81,7 +81,7 @@ int main(void) {
     move(&virus);
   }
 
-  printf("\n\ntotal new %d\n\n\n", virus.new_currently_infected);
+  printf("answer is %d\n", virus.new_currently_infected);
 
   return 0;
 }
