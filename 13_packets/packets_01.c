@@ -57,9 +57,7 @@ int severity(const char *filename) {
 }
 
 int main(void) {
-  int answer = severity("small_input.txt");
-  printf("Computed answer is %d, correct answer is 24 \n", answer);
-  answer = severity("input.txt");
-  printf("Computed answer is %d, correct answer is ???? \n", answer);
+  int answer = severity("input.txt");
+  printf("answer is %d\n", answer);
   return 0;
 }

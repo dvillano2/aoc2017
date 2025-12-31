@@ -80,9 +80,7 @@ int delay(const char *filename) {
 }
 
 int main(void) {
-  int answer = delay("small_input.txt");
-  printf("Computed answer is %d, correct answer is 10 \n", answer);
-  answer = delay("input.txt");
-  printf("Computed answer is %d, correct answer is ???? \n", answer);
+  int answer = delay("input.txt");
+  printf("answer is %d\n", answer);
   return 0;
 }
