@@ -43,8 +43,6 @@ int count_matches(uint_fast64_t a_num, uint_fast64_t b_num) {
 }
 
 int main(void) {
-  int answer = count_matches(65, 8921);
-  printf("Calculated %d, correct answer is 309\n", answer);
-  answer = count_matches(289, 629);
-  printf("Calculated %d, correct answer is ????\n", answer);
+  int answer = count_matches(289, 629);
+  printf("answer is %d\n", answer);
 }
