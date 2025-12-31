@@ -210,6 +210,6 @@ int main(void) {
     update_positions(particles);
     collide(particles);
   }
-  printf("\nRemaining particles: %d\n\n", count_remaining(particles));
+  printf("answer is %d\n", count_remaining(particles));
   return 0;
 }

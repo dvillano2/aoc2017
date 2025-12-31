@@ -36,7 +36,7 @@ int main(void) {
       a += get_int(&l);
     }
     if (a == 1) {
-      printf("\nAnswer is %d\n\n", count);
+      printf("answer is %d\n", count);
       break;
     }
     count++;
