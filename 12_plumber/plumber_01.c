@@ -93,8 +93,7 @@ int get_zero_size(const char *filename) {
 }
 
 int main(void) {
-  int answer = get_zero_size("small_input.txt");
-  printf("Calcluated answer is %d, correct answer is 6\n", answer);
-  answer = get_zero_size("input.txt");
-  printf("Calcluated answer is %d, correct answer is ????\n", answer);
+  int answer = get_zero_size("input.txt");
+  printf("answer is %d\n", answer);
+  return 0;
 }
