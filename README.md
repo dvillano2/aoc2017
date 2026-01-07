@@ -1,5 +1,5 @@
 AOC 2017 in C.
-Done as a learning exercise using only the standard library.
+A learning exercise.
 Prior to doing this, I had written no C.
 I found this pretty fun, and once December rolled around I did 2025 in C also. You can find that in another repo on this github.
 
