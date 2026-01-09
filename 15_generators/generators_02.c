@@ -45,4 +45,5 @@ int count_matches(uint_fast64_t a_num, uint_fast64_t b_num) {
 int main(void) {
   int answer = count_matches(289, 629);
   printf("answer is %d\n", answer);
+  return 0;
 }
