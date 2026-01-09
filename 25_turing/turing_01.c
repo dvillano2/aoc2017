@@ -109,4 +109,5 @@ int main(void) {
   }
   printf("answer is %d\n", checksum);
   free(tape);
+  return 0;
 }
