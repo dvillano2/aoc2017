@@ -197,6 +197,5 @@ int main(void) {
   }
   int final_count = count_bits(&final[0][0], 3, 6);
   printf("answer is %d\n", final_count);
-
   return 0;
 }

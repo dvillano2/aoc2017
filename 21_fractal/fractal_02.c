@@ -196,6 +196,5 @@ int main(void) {
 
   int final_count = count_bits(grid, block_size, blocks);
   printf("answer is %d\n", final_count);
-
   return 0;
 }
