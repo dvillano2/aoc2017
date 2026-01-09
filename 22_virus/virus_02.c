@@ -82,6 +82,5 @@ int main(void) {
   }
 
   printf("answer is %d\n", virus.new_currently_infected);
-
   return 0;
 }
